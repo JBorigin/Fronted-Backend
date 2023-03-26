@@ -1,0 +1,21 @@
+CREATE DATABASE BDFISCALIA;
+
+USE BDFISCALIA;
+
+CREATE TABLE DEPARTAMENTO(
+Id_departamento INT PRIMARY KEY NOT NULL,
+Nombre_departamento VARCHAR (20) NOT NULL,
+
+);
+
+CREATE TABLE  FISCALIA(
+Id_fiscalia VARCHAR (10) PRIMARY KEY NOT NULL,
+Id_departamento INT NOT NULL,
+Nombre_fiscalia VARCHAR (40) NOT NULL,
+Ubicacion_fiscalia VARCHAR (40) NOT NULL,
+Telefono_fiscalia VARCHAR (10) NOT NULL,
+
+CONSTRAINT fk_departamento FOREIGN KEY (Id_departamento) REFERENCES DEPARTAMENTO (Id_departamento)
+);
+
+DROP BDFISCALIA;

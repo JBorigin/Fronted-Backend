@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<hteml>
+    <head>
+        <meta charset="utf-8">
+        <title>Fiscalias</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="datos.js"></script>
+    </head>
+    <body>
+        <form id="form" action="" class="form">
+            <h1>Registro de Fiscalias</h1>
+            <fieldset>
+                <label for="seleccionRegion" name="seleccionRegion">Seleccione una Region
+                    <select class="seleccionFiscalia" name="seleccionFiscalia">
+                        <option value="">(seleccione una)</option>
+                        <option value="1">Guatemala</option>
+                        <option value="2">Sacatepequez</option>
+                        <option value="3">Chimaltenango</option>
+                    </select>
+                </label>
+                    <label id="nombreF">Nombre Fiscalia</label>
+                    <label id="ubicaF">Ubicacion Fiscalia</label>
+                    <label id="telefonoF">Telefono Fiscalia</label>
+                </label>
+            </fieldset>
+            <h1>Ingreso o Modificacion de Fiscalia</h1>
+            <fieldset>
+                <label for="nombreFiscalia">Ingrese el nombre de la Fiscalia: <input id="nF" name="nF" type="text" required/></label>
+                <label for="ubicacionFiscalia">Ingrese la ubicacion de la Fiscalia: <input id="uF" name="uF" type="text" required/></label>
+                <label for="telefonoFiscalia">Ingrese el numero de telefono de la Fiscalia: <input id="tF" name="tF" type="text" minlength="8" required/></label>
+                <button type="button" onclick="captura()">Enviar</button>
+            </fieldset>
+        </form>
+    </body>
+</hteml>
